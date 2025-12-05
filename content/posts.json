@@ -1,0 +1,60 @@
+[
+  {
+    "slug": "welcome-to-myblog",
+    "title": "Welcome to My Personal Blog",
+    "date": "2024-01-18",
+    "excerpt": "An introduction to this space, my goals for writing, and what you can expect here.",
+    "tags": ["intro", "personal", "writing"],
+    "content": """
+    ## Hello, world
+
+    I'm thrilled to finally publish a dedicated space for long-form writing. This blog is where I'll share:
+
+    - Notes from books and podcasts
+    - Dev logs for side projects
+    - Reflections on career and learning
+
+    Expect a steady mix of technical walkthroughs and personal notes. I hope you'll find something useful and stick around for the journey.
+    """
+  },
+  {
+    "slug": "building-a-simple-api",
+    "title": "Building a Simple API with Flask",
+    "date": "2024-02-02",
+    "excerpt": "A quick primer on creating a small REST API using Python's Flask framework.",
+    "tags": ["python", "flask", "backend"],
+    "content": """
+    ## Overview
+
+    Flask makes it straightforward to build APIs with minimal setup. Here's a tiny example:
+
+    ```python
+    from flask import Flask, jsonify
+
+    app = Flask(__name__)
+
+    @app.get('/ping')
+    def ping():
+        return jsonify({"status": "ok"})
+    ```
+
+    When paired with a few well-placed tests and type hints, this pattern scales nicely for hobby projects.
+    """
+  },
+  {
+    "slug": "notes-on-learning",
+    "title": "Notes on Learning Effectively",
+    "date": "2024-03-22",
+    "excerpt": "Strategies that help me retain more and stay motivated while learning new topics.",
+    "tags": ["learning", "habits", "productivity"],
+    "content": """
+    ## Tactics that work for me
+
+    1. **Space repetition:** revisit material after a few days and again after a week.
+    2. **Teach back:** write short summaries as if explaining to a peer.
+    3. **Build something small:** a tiny project cements the new concept.
+
+    I'll continue to share techniques that keep me consistent without burning out.
+    """
+  }
+]
