@@ -6,7 +6,6 @@
     "excerpt": "An introduction to this space, my goals for writing, and what you can expect here.",
     "tags": ["intro", "personal", "writing"],
     "content": "## Hello, world\n\nI'm thrilled to finally publish a dedicated space for long-form writing. This blog is where I'll share:\n\n- Notes from books and podcasts\n- Dev logs for side projects\n- Reflections on career and learning\n\nExpect a steady mix of technical walkthroughs and personal notes. I hope you'll find something useful and stick around for the journey."
-
   },
   {
     "slug": "building-a-simple-api",
@@ -15,7 +14,6 @@
     "excerpt": "A quick primer on creating a small REST API using Python's Flask framework.",
     "tags": ["python", "flask", "backend"],
     "content": "## Overview\n\nFlask makes it straightforward to build APIs with minimal setup. Here's a tiny example:\n\n```python\nfrom flask import Flask, jsonify\n\napp = Flask(__name__)\n\n@app.get('/ping')\ndef ping():\n    return jsonify({\\\"status\\\": \\\"ok\\\"})\n```\n\nWhen paired with a few well-placed tests and type hints, this pattern scales nicely for hobby projects."
-
   },
   {
     "slug": "notes-on-learning",

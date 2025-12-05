@@ -66,6 +66,8 @@ Below is a simple process to get the project running on a Linux server (Ubuntu/D
    - Check logs: `journalctl -u myblog.service -f`.
    - Verify Gunicorn is listening: `ss -tlnp | grep 8000`.
    - Restart after code updates: `sudo systemctl restart myblog.service`.
+   - If Gunicorn reports `Failed to find attribute 'app' in 'app'`, ensure you are pointing to `app:app` (the module `app.py` and the `app` object exposed within it). You can also run with the factory directly via `gunicorn --bind 0.0.0.0:8000 'app:create_app()'`.
+
 
 If you prefer to keep it simple, you can also start the app with `flask --app app.py run --host 0.0.0.0 --port 8000` and use a process manager like `tmux` or `supervisor` to keep it alive.
 
